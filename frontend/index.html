@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" type="image/x-icon" href="/frontend/imgs/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <section>
+        <div id="title">To-Do List</div>
+
+        <p> <span class="material-icons">fitness_center</span> Foi para a academia?:<input type="checkbox" name="check" id="acad"  class="check"></p>
+        <p> <span class="material-icons">book</span>           Leu?:                <input type="checkbox" name="check" id="read"  class="check"></p>
+        <p> <span class="material-icons">work</span>           Trabalhou?:          <input type="checkbox" name="check" id="work"  class="check"></p>
+        <p> <span class="material-icons">water</span>          Bebeu 2L de água?:   <input type="checkbox" name="check" id="water" class="check"></p>
+
+
+        <input type="button" value="Enviar" id="send" onclick="send()">
+    </section>
+
+    <footer>
+        <div id="bottom-itens">
+        <p>&copy; 2025 Gabriel Castro </p>
+        <a href="https://github.com/imgabrielcastro"><img src="./imgs/gitLogo.png"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
