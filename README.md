@@ -14,10 +14,9 @@ A aplicação registra esses hábitos em um banco de dados PostgreSQL, permitind
 
 ## Funcionalidades
 
-- Registro de hábitos diários como: academia, leitura, trabalho e consumo de água.
-- Verificação de dados no banco para evitar duplicação de registros para o mesmo dia.
-- Armazenamento seguro dos dados no banco PostgreSQL.
-- Interface simples e limpa, adaptada para dispositivos móveis.
+- Registra se o usuário realizou atividades físicas (academia), leitura, trabalho e consumo de água.
+- Armazena os dados com a data de registro no banco de dados.
+- Interface simples e intuitiva.
 
 ## Como Usar
 
@@ -25,11 +24,12 @@ A aplicação registra esses hábitos em um banco de dados PostgreSQL, permitind
    ```bash
    git clone https://github.com/seuusuario/to-do-list.git
    
-2 Instale as dependências no backend:
-cd backend
-npm install cors dotenv express pg
-
+2. Instale as dependências no backend:
+   ```bash
+   cd backend
+   npm install cors dotenv express pg 
 3. Inicie o servidor:
-node servidor.js
+    ```bash
+    node servidor.js
+4. Acesse a aplicação no navegador.
 
-4. 4. Acesse a aplicação no navegador.
