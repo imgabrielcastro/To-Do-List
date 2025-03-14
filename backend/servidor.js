@@ -20,18 +20,18 @@ client.connect()
 app.use(express.json());
 
 app.post('/atividade', (req, res) => {
-  const { malhou, leu, trabalhou, bebeu_agua, data_registro } = req.body; 
+  const { malhou, leu, trabalhou, bebeu_agua, data_registro, estudou } = req.body; 
 
-  if (malhou === undefined || leu === undefined || trabalhou === undefined || bebeu_agua === undefined || !data_registro) {
+  if (malhou === undefined || leu === undefined || trabalhou === undefined || bebeu_agua === undefined || !data_registro || estudou === undefined) {
     return res.status(400).json({ error: 'Todos os campos são obrigatórios!' });
   }
 
   const query = `
-    INSERT INTO habitos_diarios (malhou, leu, trabalhou, bebeu_agua, data_registro)
-    VALUES ($1, $2, $3, $4, $5)
+    INSERT INTO habitos_diarios (malhou, leu, trabalhou, bebeu_agua, data_registro, estudou)
+    VALUES ($1, $2, $3, $4, $5, $6)
   `;
 
-  client.query(query, [malhou, leu, trabalhou, bebeu_agua, data_registro])
+  client.query(query, [malhou, leu, trabalhou, bebeu_agua, data_registro, estudou])
     .then(() => {
       res.status(201).json({ message: 'Atividade registrada com sucesso!' });
     })
